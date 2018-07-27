@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Butter from 'buttercms'
 import { Helmet } from "react-helmet";
 
+import '../index.css';
+
 
 const butter = Butter('bf38a041f9c08115026386be442c10deb269d6ec');
 
@@ -37,14 +39,18 @@ class BlogPost extends Component {
             <meta name="description" content={post.meta_description} />
             <meta name="og:image" content={post.featured_image} />
           </Helmet>
-          <h1>{post.title}</h1>
-          <div dangerouslySetInnerHTML={{__html: post.body}} />
+          <div style={{background: 'url('+ post.featured_image + ')'}} className="center-box">
+            <div className="blog-container">
+              <h1>{post.title}</h1>
+              <div dangerouslySetInnerHTML={{__html: post.body}} />
+            </div>
+          </div>
         </div>
       );
     } else {
       return (
-        <div>
-          Loading...
+        <div className="loading-box">
+        <img alt="loading" src="https://loading.io/spinners/typing/lg.-text-entering-comment-loader.gif" />
         </div>
       );
     }

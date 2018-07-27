@@ -1,17 +1,12 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
+import Navbar from './Navbar';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <div className="App-header">
-          <nav>
-            <Link exact to="/">OddPillars</Link>
-            <Link exact to="/blog">Blog</Link>
-            <Link exact to="/contact">Contact</Link>
-            <Link exact to="/tools">Tools</Link>
-          </nav>
+          <Navbar />
         </div>
         <div>
           {this.props.children}
