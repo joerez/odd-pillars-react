@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "buttercms": "^1.1.1",
+    "materialize-css": "^0.100.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-helmet": "^5.2.0",

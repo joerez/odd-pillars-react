@@ -24,6 +24,11 @@ body {
   padding-right: 1rem;
   width: 100%;
   box-shadow: 0 1px 3px rgba(0,0,0,.3);
+  color: black;
+}
+
+nav a {
+  color: black;
 }
 
 .home-hero {
@@ -91,4 +96,135 @@ body {
   background-size: cover !important;
   background-repeat: no-repeat !important;
   background-attachment: fixed !important;
+}
+
+.blogPostSection {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: #fffdfc;
+}
+
+.blogSectionTitle {
+  width: 100%;
+  margin-left: 5rem;
+  text-align: left;
+  color: #003;
+}
+
+.blog-post-container {
+  margin: 2rem;
+  color: #000;
+  background-color: #f5f3f2;
+  padding: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 0;
+  transition: all .15s ease;
+}
+
+.blog-post-container:hover {
+  transform: translateY(-.12rem) translateZ(0);
+}
+
+.blog-post-container img {
+  align-self: center;
+  height: 10rem;
+}
+
+.containerLink {
+  text-decoration: none;
+}
+
+.post-title {
+  margin-left: 0px;
+  width: 100%;
+  color: #000;
+  text-align: left;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 550;
+  margin-bottom: 5px;
+}
+
+.post-desc {
+  margin-left: 0px;
+  margin-top: 0;
+  color: #757272;
+  text-align: left;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.read-more {
+  margin-top: 0;
+  margin-left: 0px;
+  color: #000;
+  text-align: left;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 550;
+  transition: all .15s ease;
+  display: flex;
+  align-items: center;
+  margin-right: 3px;
+}
+
+.read-more:hover {
+  margin-right: 10px;
+  text-decoration: underline;
+}
+
+.allofit {
+  transition: all .15s ease;
+}
+
+.allofit:hover {
+  margin-left: 5px;
+}
+
+.pagination {
+  width: 100%;
+}
+
+.call-to-action {
+  margin-top: 1rem;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  background-color: #fdfdfd;
+  color: #616161;
+  border-radius: 40px;
+  border: 1px solid #c1c1c1;
+  padding: 10px 0;
+  text-decoration: none;
+  width: 20rem;
+  text-align: center;
+  -webkit-transition: all .1s;
+  -o-transition: all .1s;
+  transition: all .1s;
+  font-size: 1.4rem;
+}
+
+.call-to-action:active {
+  background-color: #fdfdfd;
+  color: white;
+}
+
+
+.call-to-action:hover {
+  transform: scale(1.02);
+}
+
+.readMoreLink {
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
 }

@@ -4,6 +4,7 @@ import Butter from 'buttercms'
 
 
 import '../index.css';
+import Footer from './Footer';
 
 const butter = Butter('bf38a041f9c08115026386be442c10deb269d6ec');
 
@@ -47,26 +48,33 @@ class BlogHome extends Component {
       return (
         <div>
 
-          <div class="blogPostSection">
-            {this.state.resp.data.map((post) => {
-              return (
-                <div key={post.slug}>
-                  <Link to={`/post/${post.slug}`}>
-                    <img alt={post.meta_description} src={post.featured_image} />
-                  </Link>
+        <div className="blogPostSection">
+          <h1 className="blogSectionTitle">Latest Publications</h1>
+
+
+          {this.state.resp.data.map((post) => {
+            return (
+              <Link className="containerLink" key={post.slug} to={`/post/${post.slug}`}>
+                <div className="blog-post-container waves-effect waves-light">
+                  <img alt={post.meta_description} src={post.featured_image} />
+                  <p key="0" className="post-title">{post.title}</p>
+                  <p key="1" className="post-desc">{post.meta_description}</p>
+                  <div className="readMoreLink" key="2"><div className="read-more">Read More</div><i className="material-icons allofit">arrow_forward</i></div>
                 </div>
-              )
-            })}
+              </Link>
 
-            <br />
+            )
+          })}
 
-            <div>
-              {previous_page && <Link to={`/p/${previous_page}`}>Prev</Link>}
 
-              {next_page && <Link to={`/p/${next_page}`}>Next</Link>}
-            </div>
+          <div className="pagination">
+            {previous_page && <Link to={`/p/${previous_page}`}>Prev</Link>}
+
+            {next_page && <Link to={`/p/${next_page}`}>Next</Link>}
           </div>
+        </div>
 
+        <Footer />
 
         </div>
       );

@@ -3,6 +3,10 @@ import { Link } from 'react-router'
 import Butter from 'buttercms'
 
 import HomeHero from './HomeHero';
+import Footer from './Footer';
+
+import 'materialize-css/dist/css/materialize.min.css';
+import 'materialize-css/dist/js/materialize.min.js';
 
 import '../index.css';
 
@@ -49,26 +53,33 @@ class BlogHome extends Component {
         <div>
           <HomeHero />
 
-          <div class="blogPostSection">
+          <div className="blogPostSection">
+            <h1 className="blogSectionTitle">Latest Publications</h1>
+
+
             {this.state.resp.data.map((post) => {
               return (
-                <div key={post.slug}>
-                  <Link to={`/post/${post.slug}`}>
+                <Link className="containerLink" key={post.slug} to={`/post/${post.slug}`}>
+                  <div className="blog-post-container waves-effect waves-light">
                     <img alt={post.meta_description} src={post.featured_image} />
-                  </Link>
-                </div>
+                    <p key="0" className="post-title">{post.title}</p>
+                    <p key="1" className="post-desc">{post.meta_description}</p>
+                    <div className="readMoreLink" key="2"><div className="read-more">Read More</div><i className="material-icons allofit">arrow_forward</i></div>
+                  </div>
+                </Link>
+
               )
             })}
 
-            <br />
 
-            <div>
+            <div className="pagination">
               {previous_page && <Link to={`/p/${previous_page}`}>Prev</Link>}
 
               {next_page && <Link to={`/p/${next_page}`}>Next</Link>}
             </div>
           </div>
 
+          <Footer />
 
         </div>
       );
