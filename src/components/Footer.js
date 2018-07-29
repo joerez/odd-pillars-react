@@ -6,7 +6,7 @@ class Footer extends Component {
   render() {
     return (
       <div>
-        <footer className="page-footer blue-grey">
+        <footer className="page-footer blue-grey darken-4">
           <div className="container">
             <div className="row">
               <div className="col l6 s12">
@@ -25,7 +25,7 @@ class Footer extends Component {
               </div>
             </div>
           </div>
-          <div className="footer-copyright">
+          <div className="footer-copyright black">
             <div className="container">
             © 2018 Copyright by OddPillars.com
             <a className="grey-text text-lighten-4 right" href="#!">More Links</a>

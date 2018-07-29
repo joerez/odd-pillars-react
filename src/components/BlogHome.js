@@ -3,7 +3,9 @@ import { Link } from 'react-router'
 import Butter from 'buttercms'
 
 import HomeHero from './HomeHero';
+import Subscribe from './Subscribe';
 import Footer from './Footer';
+
 
 import 'materialize-css/dist/css/materialize.min.css';
 import 'materialize-css/dist/js/materialize.min.js';
@@ -79,6 +81,8 @@ class BlogHome extends Component {
             </div>
           </div>
 
+          <Subscribe />
+
           <Footer />
 
         </div>
@@ -93,5 +97,7 @@ class BlogHome extends Component {
     }
   }
 }
+
+
 
 export default BlogHome;

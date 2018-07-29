@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import Butter from 'buttercms'
 import { Helmet } from "react-helmet";
 
+import Subscribe from './Subscribe';
+import Footer from './Footer';
+
+
 import '../index.css';
 
 
@@ -44,6 +48,9 @@ class BlogPost extends Component {
               <h1>{post.title}</h1>
               <div dangerouslySetInnerHTML={{__html: post.body}} />
             </div>
+
+            <Subscribe />
+            <Footer />
           </div>
         </div>
       );
