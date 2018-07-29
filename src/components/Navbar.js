@@ -4,9 +4,9 @@ import { Link } from 'react-router';
 class Navbar extends Component {
   render() {
     return (
-      <div> 
+      <div>
         <nav className="nav-bar">
-          <Link to="/"><div className="header-logo">Oddpillars</div></Link>
+          <Link to="/"><div className="header-logo">OddPillars</div></Link>
           <Link to="/blog"><div className="header-link">Blog</div></Link>
         </nav>
       </div>
