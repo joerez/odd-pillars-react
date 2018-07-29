@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router'
 import Butter from 'buttercms'
 
+import { Helmet } from 'react-helmet'
+
 import HomeHero from './HomeHero';
 import Subscribe from './Subscribe';
 import Footer from './Footer';
@@ -53,6 +55,10 @@ class BlogHome extends Component {
 
       return (
         <div>
+          <Helmet>
+            <title>OddPillars | De-Occulting the hidden World</title>
+            <meta name="description" content="Oddpillars is a blog focused on Western Esoteric Education." />
+          </Helmet>
           <HomeHero />
 
           <div className="blogPostSection">

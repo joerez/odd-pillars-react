@@ -2,8 +2,11 @@ import React, { Component } from 'react';
 import { Link } from 'react-router'
 import Butter from 'buttercms'
 
+import { Helmet } from 'react-helmet'
 
 import '../index.css';
+
+import Subscribe from './Subscribe'
 import Footer from './Footer';
 
 const butter = Butter('bf38a041f9c08115026386be442c10deb269d6ec');
@@ -47,6 +50,10 @@ class BlogHome extends Component {
 
       return (
         <div>
+        <Helmet>
+          <title>OddPillars | Blog</title>
+          <meta name="description" content="Oddpillars is a blog focused on Western Esoteric Education." />
+        </Helmet>
 
         <div className="blogPostSection">
           <h1 className="blogSectionTitle">Latest Publications</h1>
@@ -74,6 +81,7 @@ class BlogHome extends Component {
           </div>
         </div>
 
+        <Subscribe />
         <Footer />
 
         </div>

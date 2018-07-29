@@ -37,13 +37,13 @@ class BlogPost extends Component {
       const post = this.state.post;
 
       return (
-        <div>
+        <div className="blog-Post-Page">
           <Helmet>
             <title>{post.seo_title}</title>
             <meta name="description" content={post.meta_description} />
             <meta name="og:image" content={post.featured_image} />
           </Helmet>
-          <div style={{background: 'url('+ post.featured_image + ')'}} className="center-box">
+
             <div className="blog-container">
               <h1>{post.title}</h1>
               <div dangerouslySetInnerHTML={{__html: post.body}} />
@@ -51,13 +51,12 @@ class BlogPost extends Component {
 
             <Subscribe />
             <Footer />
-          </div>
         </div>
       );
     } else {
       return (
         <div className="loading-box">
-        <img alt="loading" src="https://loading.io/spinners/typing/lg.-text-entering-comment-loader.gif" />
+          <img alt="loading" src="https://loading.io/spinners/typing/lg.-text-entering-comment-loader.gif" />
         </div>
       );
     }

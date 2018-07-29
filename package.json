@@ -13,7 +13,7 @@
     "react-scripts": "1.1.4"
   },
   "scripts": {
-    "start": "REACT_APP_EMAILJS_USERID=user_sQHO8NFrcMn5Ii8qzgv33 REACT_APP_EMAILJS_TEMPLATEID=contact REACT_APP_EMAILJS_TEMPLATEID=rezenbiz@gmail.com react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build && echo '/*    /index.html   200' > build/_redirects",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
