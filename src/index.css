@@ -308,3 +308,22 @@ nav a {
 
 .subbtn {
 }
+
+
+@media (max-width: 900px) and (min-width: 300px) {
+  .loading-div h1 {
+    font-size: 80%;
+  }
+
+  .blog-container {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    border: none;
+  }
+
+  .blog-container p {
+    font-size: 20px;
+  }
+
+}
