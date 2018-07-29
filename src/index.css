@@ -343,5 +343,9 @@ nav a {
   #mce-EMAIL {
     width: 70% !important;
   }
-  
+
+  .mc-layout__bannerContent {
+    display: none;
+  }
+
 }
