@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 
 class FeaturedPosts extends Component {
   render() {
@@ -27,8 +28,12 @@ class FeaturedPosts extends Component {
 
 
 
-
         </div>
+        <center>
+          <Link className="call-to-action hoverable waves-effect waves-purple" to="/blog">See Full Blog</Link>
+          <br />
+        </center>
+          <br />
       </div>
     )
   }
