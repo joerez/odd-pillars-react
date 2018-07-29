@@ -326,4 +326,22 @@ nav a {
     font-size: 20px;
   }
 
+  .mc-banner {
+    display: none !important;
+  }
+
+  #PopupSignupForm_0 {
+    display: none !important;
+  }
+
+  .subscribe-section {
+    height: 37.3vh;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+
+  #mce-EMAIL {
+    width: 70% !important;
+  }
+  
 }
