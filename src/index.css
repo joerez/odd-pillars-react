@@ -286,6 +286,10 @@ nav a {
   width: 100%;
 }
 
+strong {
+  font-weight: 600;
+}
+
 .subscribe-section {
   height: 50vh;
   width: 100%;
