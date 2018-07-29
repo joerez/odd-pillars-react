@@ -348,4 +348,8 @@ nav a {
     display: none;
   }
 
+  .hero-subtitle {
+    font-size: 2rem;
+  }
+
 }
