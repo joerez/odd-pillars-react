@@ -8,6 +8,7 @@ import HomeHero from './HomeHero';
 import Subscribe from './Subscribe';
 import Footer from './Footer';
 
+import Loading from './Loading';
 
 import 'materialize-css/dist/css/materialize.min.css';
 import 'materialize-css/dist/js/materialize.min.js';
@@ -96,9 +97,7 @@ class BlogHome extends Component {
     } else {
       //loading
       return (
-        <div className="loading-box">
-          <img alt="loading" src="https://loading.io/spinners/typing/lg.-text-entering-comment-loader.gif" />
-        </div>
+        <Loading />
       )
     }
   }

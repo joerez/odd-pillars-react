@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 
 import Subscribe from './Subscribe';
 import Footer from './Footer';
-
+import Loading from './Loading';
 
 import '../index.css';
 
@@ -55,9 +55,7 @@ class BlogPost extends Component {
       );
     } else {
       return (
-        <div className="loading-box">
-          <img alt="loading" src="https://loading.io/spinners/typing/lg.-text-entering-comment-loader.gif" />
-        </div>
+        <Loading />
       );
     }
   }
