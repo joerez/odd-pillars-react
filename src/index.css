@@ -42,10 +42,22 @@ body {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   margin: auto;
-  height: 600px;
+  height: 200px;
   animation-duration: 5s;
   animation-iteration-count: infinite;
   z-index: 1;
+}
+
+.hero-pillar {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  margin: auto;
+  margin-left: 20%;
+  height: 200px;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  z-index: 1;
+  opacity: .5;
 }
 
 .nav-bar {
@@ -82,10 +94,12 @@ nav a {
 
 .hero-title {
   color: white;
+  z-index: 2;
 }
 
 .hero-subtitle {
   color: white;
+  z-index: 2;
 }
 
 .blog-container {
@@ -120,6 +134,7 @@ nav a {
   border-radius: 20px;
   font-size: 1rem;
   transition: all 200ms;
+  z-index: 2;
 }
 
 .header-link {

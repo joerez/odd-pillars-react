@@ -4,6 +4,7 @@ import { Link } from 'react-router'
 import 'materialize-css/dist/css/materialize.min.css';
 import 'materialize-css/dist/js/materialize.min.js';
 
+import 'woah.css/woah.css';
 
 class HomeHero extends Component {
   render() {
@@ -14,6 +15,7 @@ class HomeHero extends Component {
         <center>
           <Link className="call-to-action hoverable waves-effect waves-purple" to="/blog">Go To Blog</Link>
         </center>
+
       </div>
     )
   }
