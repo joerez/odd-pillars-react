@@ -18,7 +18,6 @@ class Footer extends Component {
                 <h5 className="white-text">Links</h5>
                 <ul>
                     <li><a className="grey-text text-lighten-3" href="#!">Home</a></li>
-                    <li><a className="grey-text text-lighten-3" href="#!">Contact Us</a></li>
                     <li><Link className="grey-text text-lighten-3" to="/blog">Blog</Link></li>
                   </ul>
                 </div>
@@ -27,8 +26,8 @@ class Footer extends Component {
           </div>
           <div className="footer-copyright black">
             <div className="container">
-            © 2018 Copyright by OddPillars.com
-            <a className="grey-text text-lighten-4 right" href="#!">More Links</a>
+            © 2018 Copyright by oddpillars.com
+            <a className="grey-text text-lighten-4 right">contact@oddpillars.com</a>
             </div>
           </div>
         </footer>

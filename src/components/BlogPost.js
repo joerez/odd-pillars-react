@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import Subscribe from './Subscribe';
 import Footer from './Footer';
 import Loading from './Loading';
+import FeaturedPosts from './FeaturedPosts';
 
 import '../index.css';
 
@@ -48,8 +49,13 @@ class BlogPost extends Component {
               <h1>{post.title}</h1>
               <div dangerouslySetInnerHTML={{__html: post.body}} />
             </div>
+            <hr />
+            <FeaturedPosts />
+
 
             <Subscribe />
+
+
             <Footer />
         </div>
       );
