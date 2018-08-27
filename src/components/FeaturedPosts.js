@@ -26,8 +26,6 @@ class FeaturedPosts extends Component {
             </div>
           </a>
 
-
-
         </div>
         <center>
           <Link className="call-to-action hoverable waves-effect waves-purple" to="/blog">See Full Blog</Link>

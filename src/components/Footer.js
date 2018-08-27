@@ -12,6 +12,7 @@ class Footer extends Component {
               <div className="col l6 s12">
                 <h5 className="white-text">OddPillars</h5>
                 <p className="grey-text text-lighten-4">De-Occulting the Hidden World</p>
+                <a href="https://buttercms.com/"><img alt="butter-cms" height="25" src="https://cdn.buttercms.com/RyJ7UhcVTCRqrCFXwgCo" /></a>
               </div>
               <div className="col l4 offset-l2 s12">
               <div className="align-left">
